@@ -1,38 +1,145 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+.App-Upper{
+  display:flex;
+  background-color: ;
+  flex-direction: column;
+}
+.App-Upper-Decor1{
+  background-color: #373737;
+  height: 2em ;
+  width: 100vw;
+
+
+}
+
+.App-Upper-Decor2{
+  background-color: #ff7b5d;
+  height: 6.7em;
+  width: 100vw;
+  display:flex;
+  flex-direction:row;
   align-items: center;
+  animation: changeBackgroundColor 20s infinite;
+
+}
+@keyframes changeBackgroundColor {
+  0% {
+    background-color: #373737;
+  }
+  20% {
+    background-color: #ff7b5d;
+  }
+  80%{
+    background-color: #ff7b5d;
+  }
+  90% {
+    background-color: #373737;
+  }
+  100%{
+    background-color: #373737;
+  }
+}
+.App-Upper-Decor2-text{
+  margin-left: 5em;
+  margin-right: 4em;
+  font: 2vw Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  word-wrap:break-word;
+  color:white;
+  font-weight: bold;
+
+}
+.App-Upper-Decor2-logo{
+  height:60px;
+  width:300px;
+  margin: 3em;
+  object-fit: cover;
+ }
+.App-Upper-Menu{
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  top:20vh;
+  height: 3.7em;
+  width: 100vw;
+}
+.App-Upper-Menu-Button{
+  background-color: #d9d9d9;
+  text-align: center;
+  line-height: 3em;
+  margin: 5px;
+  height: 3em;
+  width: 8em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.App-Upper-Menu-Button:hover{
+  background-color: #999999;
+  animation: colorChange 1s infinite;
+}
+@keyframes colorChange {
+  0%   {background-color: red; color: black;}
+  25%  {background-color: yellow; color: white;}
+  50%  {background-color: blue; color: black;}
+  100% {background-color: green; color: white;}
+  }
+#seccion2 {
+  position: absolute;
+  width: 334px;
+  height: 354px;
+  left: 257px;
+  top: 220px;
+  border-radius: 5px;
+}
+#seccion3{
+  position: absolute;
+  width: 346px;
+  height: 203px;
+  left: 700px;
+  top: 220px;
+  border-radius: 5px;
+}
+fieldset {
+  width: 350px;
+  margin-top: 20px;
+  border: 1px solid #d6d6d6;
+  background-color: #ffffff;
+  line-height: 1.6em;
+}
+input[type="text"]{
+  width: 150px;
+  border: 1px solid #d6d6d6;
+  padding: 2px;
+  outline: none;
+}
+input[type="text"]:focus,
+input[type="text"]:hover {
+  background-color: #d0e2f0;
+  border: 1px solid #999999;
+}
+input[type="password"]{
+  width: 150px;
+  border: 1px solid #d6d6d6;
+  padding: 2px;
+  outline: none;
+}
+select[name="carreras"]{
+  width: 156px;
+  border: 1px solid #d6d6d6;
+  padding: 2px;
+  outline: none;
+}
+select[name="identificar"]{
+  width: 156px;
+  border: 1px solid #d6d6d6;
+  padding: 2px;
+  outline: none;
+}
+.label {
+  float: left;
+  width: 160px;
+  clear: left;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
